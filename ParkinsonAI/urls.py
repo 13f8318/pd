@@ -12,6 +12,6 @@ urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^admin/', admin.site.urls),
     ##########################################
-    url(r'^o/', include('oauth2_provider.urls', namespace='oauth2_provider'))
+    #url(r'^o/', include('oauth2_provider.urls', namespace='oauth2_provider'))
     ##########################################
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
