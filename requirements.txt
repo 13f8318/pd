@@ -1,5 +1,6 @@
 Django==1.11.3
 djangorestframework==3.6.2
+oauth2==1.9.0.post1
 gunicorn==19.7.1
 lockfile==0.12.2
 olefile==0.44
