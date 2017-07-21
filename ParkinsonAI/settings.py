@@ -39,7 +39,20 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'PDAPI.apps.PdapiConfig',
     'rest_framework',
+    ##################
+    'django.contrib.admin',
+    'oauth2_provider',
+    'corsheaders',
+    #####################33
 ]
+
+#####################################33
+MIDDLEWARE = [
+    # ...
+    'corsheaders.middleware.CorsMiddleware',
+    # ...
+]
+#########################################
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
@@ -50,8 +63,12 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     ##################################
+    'corsheaders.middleware.CorsMiddleware',
+    ##################################
 ]
 
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'ParkinsonAI.urls'
 
 TEMPLATES = [
