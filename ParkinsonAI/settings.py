@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'PDAPI.apps.PdapiConfig',
     'rest_framework',
     ##################
-    'django.contrib.admin',
     'oauth2_provider',
     'corsheaders',
     #####################33
