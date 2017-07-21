@@ -1,6 +1,7 @@
 Django==1.11.3
 djangorestframework==3.6.2
 django-oauth-toolkit
+django-cors-headers
 gunicorn==19.7.1
 lockfile==0.12.2
 olefile==0.44
